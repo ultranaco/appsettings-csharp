@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>0.0.1</Version>
+    <Authors>Alejandro Piña</Authors>
+    <Company>Ultranaco Labs</Company>
+    <RepositoryUrl>http://github.com/ultranaco/appsettings-csharp</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>Utilities to handle AppSettings and ConnectionStrings</Description>
+    <PackageTags>AppSettings;ConnectionStrings</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
