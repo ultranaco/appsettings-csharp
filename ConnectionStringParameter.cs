@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace Ultranaco.Appsettings
 {
-  public class ConnectionStringService
+  public class ConnectionStringParameter
   {
     public static IConfiguration Configuration { get; set; }
     public static string Get(string key)
@@ -13,6 +13,11 @@ namespace Ultranaco.Appsettings
         return connectionString;
 
       throw new Exception("ConnectionString Not Found");
+    }
+
+    public ConnectionStringParameter(IConfiguration configuration)
+    {
+      ConnectionStringParameter.Configuration = configuration;
     }
   }
 }
