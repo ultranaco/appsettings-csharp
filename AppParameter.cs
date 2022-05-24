@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
 using Microsoft.Extensions.Configuration;
 
 namespace Ultranaco.Appsettings
@@ -12,7 +7,7 @@ namespace Ultranaco.Appsettings
   {
     public static T Get<T>(string key, T defaultValue)
     {
-      var value = ConfigurationManager.AppSettings[key];
+      var value = System.Configuration.ConfigurationManager.AppSettings[key];
 
       if (value != null)
         return (T)Convert.ChangeType(value, typeof(T));
@@ -22,7 +17,7 @@ namespace Ultranaco.Appsettings
 
     public static T Get<T>(string key)
     {
-      var keyApp = ConfigurationManager.AppSettings[key];
+      var keyApp = System.Configuration.ConfigurationManager.AppSettings[key];
       if (keyApp == null)
         return default(T);
 
