@@ -7,7 +7,7 @@ namespace Ultranaco.Appsettings
   {
     public static IConfiguration Configuration { get; set; }
 
-    public static IConfiguration AttachConnectionString(this IConfiguration configuration)
+    public static IConfigurationRoot AttachConnectionString(this IConfigurationRoot configuration)
     {
       ConnectionStringParameter.Configuration = configuration;
       return configuration;
