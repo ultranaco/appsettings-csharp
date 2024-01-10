@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace Ultranaco.Appsettings
 {
-  public class AppKeyParameter
+  public static class AppKeyParameter
   {
     public static IConfiguration Configuration { get; set; }
     public static T Get<T>(string key, T defaultValue)
