@@ -26,9 +26,10 @@ namespace Ultranaco.Appsettings
       return (T)Convert.ChangeType(keyApp, typeof(T));
     }
 
-    public AttachApplicationKeys(IConfiguration configuration)
+    public static IConfigurationRoot AttachApplicationKeys(this IConfigurationRoot configuration)
     {
       AppKeyParameter.Configuration = configuration;
+      return configuration;
     }
   }
 }
