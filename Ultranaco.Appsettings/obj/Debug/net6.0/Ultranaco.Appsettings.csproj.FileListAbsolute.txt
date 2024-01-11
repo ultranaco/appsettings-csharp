@@ -1,0 +1,12 @@
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/bin/Debug/net6.0/Ultranaco.Appsettings.deps.json
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/bin/Debug/net6.0/Ultranaco.Appsettings.dll
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/bin/Debug/net6.0/Ultranaco.Appsettings.pdb
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/obj/Debug/net6.0/Ultranaco.Appsettings.csproj.AssemblyReference.cache
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/obj/Debug/net6.0/Ultranaco.Appsettings.GeneratedMSBuildEditorConfig.editorconfig
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/obj/Debug/net6.0/Ultranaco.Appsettings.AssemblyInfoInputs.cache
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/obj/Debug/net6.0/Ultranaco.Appsettings.AssemblyInfo.cs
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/obj/Debug/net6.0/Ultranaco.Appsettings.csproj.CoreCompileInputs.cache
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/obj/Debug/net6.0/Ultranaco.Appsettings.dll
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/obj/Debug/net6.0/refint/Ultranaco.Appsettings.dll
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/obj/Debug/net6.0/Ultranaco.Appsettings.pdb
+/home/alex/dev/dotnet/appsettings-csharp/Ultranaco.Appsettings/obj/Debug/net6.0/ref/Ultranaco.Appsettings.dll

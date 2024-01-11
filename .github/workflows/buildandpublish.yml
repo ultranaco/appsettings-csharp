@@ -27,9 +27,13 @@ jobs:
       - name: Test
         run: dotnet test -c Release --no-build --verbosity normal
       - name: Pack
-        run: dotnet pack -c Release
+        run: |
+          cd Ultranaco.Appsettings
+          dotnet pack -c Release
       - name: Publish Nuget to GitHub registry
-        run: dotnet nuget push ./bin/Release/*.nupkg --source "https://api.nuget.org/v3/index.json" --api-key ${NUGET_TOKEN} --skip-duplicate --no-symbols
+        run: |
+          cd Ultranaco.Appsettings
+          dotnet nuget push ./bin/Release/*.nupkg --source "https://api.nuget.org/v3/index.json" --api-key ${NUGET_TOKEN} --skip-duplicate --no-symbols
         env:
           NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
       - name: View Contents

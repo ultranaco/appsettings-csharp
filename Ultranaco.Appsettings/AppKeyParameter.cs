@@ -10,8 +10,19 @@ namespace Ultranaco.Appsettings
     {
       var value = Configuration.GetSection(string.Format("AppSettings:{0}", key));
 
-      if (value != null)
-        return (T)Convert.ChangeType(value, typeof(T));
+      if (value.Value != null)
+      {
+        try
+        {
+          return (T)Convert.ChangeType(value.Value, typeof(T));
+        }
+        catch(Exception e)
+        {
+          Console.WriteLine(e.ToString());
+          return defaultValue;
+        }
+      }
+
 
       return defaultValue;
     }
