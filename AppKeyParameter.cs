@@ -8,22 +8,12 @@ namespace Ultranaco.Appsettings
     public static IConfiguration Configuration { get; set; }
     public static T Get<T>(string key, T defaultValue)
     {
-      var value = AppKeyParameter.Get<string>(key);
+      var value = Configuration.GetSection(string.Format("AppSettings:{0}", key));
 
       if (value != null)
         return (T)Convert.ChangeType(value, typeof(T));
 
       return defaultValue;
-    }
-
-    public static T Get<T>(string key)
-    {
-      var keyApp = AppKeyParameter.Get<string>(key);
-
-      if (keyApp == null)
-        return default(T);
-
-      return (T)Convert.ChangeType(keyApp, typeof(T));
     }
 
     public static IConfigurationRoot AttachApplicationKeys(this IConfigurationRoot configuration)
